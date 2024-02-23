@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Page</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #a06fc1;
+    height: 100vh;
+    background-size: cover;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    text-align: center;
+    /* color: #333; */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color:rgba(23, 25, 50, 0.4);
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color:white;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+button{
+    margin-left: 45%;
+}
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group label,
+        .form-group input {
+            flex: 0 0 48%; /* Adjust width as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Prediction Page</h1>
+    <form method="post" action="/out">
+        <div class="form-group">
+        <label for="Drug">Drug:</label>
+        <input type="text" name="Drug" required>
+        </div>
+        <div class="form-group">
+        <label for="Sex">Sex:</label>
+        <input type="text" name="Sex" required>
+            </div>
+            <div class="form-group">
+        <label for="Ascites">Ascites:</label>
+        <input type="text" name="Ascites" required>
+            </div>
+            <div class="form-group">
+        <label for="Hepatomegaly">Hepatomegaly:</label>
+        <input type="text" name="Hepatomegaly" required>
+            </div>
+            <div class="form-group">
+        <label for="Spiders">Spiders:</label>
+        <input type="text" name="Spiders" required>
+            </div>
+            <div class="form-group">
+        <label for="Edema">Edema:</label>
+        <input type="text" name="Edema" required>
+            </div>
+            <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="text" name="Age" required>
+            </div>
+            <div class="form-group">
+        <label for="Bilirubin">Bilirubin:</label>
+        <input type="text" name="Bilirubin" required>
+            </div>
+            <div class="form-group">
+        <label for="Cholesterol">Cholesterol:</label>
+        <input type="text" name="Cholesterol" required>
+            </div>
+            <div class="form-group">
+        <label for="Albumin">Albumin:</label>
+        <input type="text" name="Albumin" required>
+            </div>
+            <div class="form-group">
+        <label for="Copper">Copper:</label>
+        <input type="text" name="Copper" required>
+            </div>
+            <div class="form-group">
+        <label for="Alk_Phos">Alk_Phos:</label>
+        <input type="text" name="Alk_Phos" required>
+            </div>
+            <div class="form-group">
+        <label for="SGOT">SGOT:</label>
+        <input type="text" name="SGOT" required>
+            </div>
+            <div class="form-group">
+        <label for="Tryglicerides">Tryglicerides:</label>
+        <input type="text" name="Tryglicerides" required>
+            </div>
+            <div class="form-group">
+        <label for="Platelets">Platelets:</label>
+        <input type="text" name="Platelets" required>
+            </div>
+            <div class="form-group">
+        <label for="Prothrombin">Prothrombin:</label>
+        <input type="text" name="Prothrombin" required>
+            </div>
+            <div class="form-group">
+        <label for="Stage">Stage:</label>
+        <input type="text" name="Stage" required>
+        </div>
+        <button type="submit">Predict</button>
+    </div>
+    </form>
+    <a href="/">Go to Home Page</a>
+</body>
+</html>

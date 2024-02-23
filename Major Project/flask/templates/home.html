@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body{
+            background-image: url("https://uoflhealth.org/wp-content/uploads/2021/11/cirrhosis.jpg");
+            height: 100vh; 
+            background-size: cover;
+            /* background-position: top;
+            background-repeat: no-repeat; */
+        }
+        button{
+            align-items: center;
+            margin-left: 50%;
+            margin-top: 200px;
+            padding: 8px;
+            font-size: 1.5em;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color:dimgray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.4); /* Light color with opacity */
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            /* margin-top: 150px; */
+            border-radius: 10px;
+            text-align: center;
+            max-width: 800px; /* Maximum width of the container */
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="/pred" method="GET" enctype="multipart/form-data">
+        <div class="container">
+        <h1>Revolutionizing Liver Care : Predicting Liver Cirrhosis Using Advanced Machine Learning Techniques
+        </h1>
+        <p>Liver cirrhosis is a chronic and progressive liver disease characterized by the irreversible 
+            scarring of liver tissue, which can lead to severe complications and liver failure if left untreated. 
+            This project aims to develop a predictive model for the early detection and prognosis of liver cirrhosis 
+            using machine learning techniques.The developed predictive model holds promise for early detection and
+             prognosis of liver cirrhosis, enabling healthcare professionals to initiate timely interventions and 
+             personalized treatment strategies. By accurately identifying individuals at risk of cirrhosis, 
+             this research contributes to improved patient outcomes and the optimization of healthcare resources.
+              Moreover, it highlights the potential of machine learning in the field of hepatology, showcasing its 
+              ability to leverage clinical data for predictive modeling and decision support.
+        </p>
+    </div>
+        <button type="submit">Predict Your's</button>
+    </form>
+</body>
+</html>
